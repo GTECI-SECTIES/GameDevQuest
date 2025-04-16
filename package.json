@@ -1,0 +1,83 @@
+{
+    "name": "tema-pbsf",
+    "description": "Tema criado para a o programa Paraíba sem Fronteiras",
+    "version": "0.1.0",
+    "author": {
+        "name": "Joyce Vicente, Rodolfo Marques",
+        "email": "gteci@secties.pb.gov.br"
+    },
+    "config": {
+        "posts_per_page": 5,
+        "custom": {
+            "logo_fapesq": {
+                "type": "image",
+                "label": "Logo Fapesq"
+            },
+            "logo_secties": {
+                "type": "image",
+                "label": "Logo Secties"
+            },
+            "logo_govbranca": {
+                "type": "image",
+                "label": "Logo GovBranca"
+            },
+            "logo_pbsf": {
+                "type": "image",
+                "label": "Logo GovBranca"
+            },
+            "sobre": {
+                "type": "text",
+                "description": "Texto informativo sobre o projeto",
+                "default": "O Programa Paraíba sem Fronteiras (PBsF) abrange relações internacionais, mobilidade acadêmica, mobilidade de formação de profissionais, mobilidade entre instituições de ciência, tecnologia, inovação, empreendimentos e negócios de impacto, cooperação técnico-científica, além de comércio exterior e atração de investimentos."
+            },
+            "quem_pode_participar": {
+                "type": "text",
+                "description": "Texto informativo sobre o público alvo",
+                "default": "O Programa Paraíba sem Fronteiras (PBsF) abrange relações internacionais, mobilidade acadêmica, mobilidade de formação de profissionais, mobilidade entre instituições de ciência, tecnologia, inovação, empreendimentos e negócios de impacto, cooperação técnico-científica, além de comércio exterior e atração de investimentos."
+            },
+            "sobre_qualiexporta": {
+                "type": "text",
+                "description": "Descrição do projeto QualiExporta PBsF",
+                "default": "O Programa Paraíba sem Fronteiras (PBsF) abrange relações internacionais, mobilidade acadêmica, mobilidade de formação de profissionais, mobilidade entre instituições de ciência, tecnologia, inovação, empreendimentos e negócios de impacto, cooperação técnico-científica, além de comércio exterior e atração de investimentos."
+            },
+            "nome_qualiexporta": {
+                "type": "text",
+                "description": "nome do projeto QualiExporta PBsF",
+                "default": "QualiExporta PBsF"
+            },
+            "cta_qualiexporta_url": {
+                "type": "text",
+                "description": "url QualiExporta",
+                "label": "Link do Botão saiba mais"
+            },
+            "sobre_siscopi": {
+                "type": "text",
+                "description": "Descrição do projeto SISCOPI",
+                "default": "O Programa Paraíba sem Fronteiras (PBsF) abrange relações internacionais, mobilidade acadêmica, mobilidade de formação de profissionais, mobilidade entre instituições de ciência, tecnologia, inovação, empreendimentos e negócios de impacto, cooperação técnico-científica, além de comércio exterior e atração de investimentos."
+            },
+            "nome_siscopi": {
+                "type": "text",
+                "description": "nome do projeto SICOPI",
+                "default": "SICOPI"
+            },
+            "cta_siscopi_url": {
+                "type": "text",
+                "description": "url SISCOP",
+                "default": "Link do Botão saiba mais"
+            },
+
+
+            "about_button": {
+                "type": "boolean",
+                "default": true,
+                "label": "Mostrar botão saiba mais sobre o PBSF"
+              },
+
+            "participant_button": {
+                "type": "boolean",
+                "default": true,
+                "label": "Mostrar botão saiba mais quem pode participar"
+              }
+        }
+    }
+}
