@@ -1,53 +1,58 @@
-<section class="gallery-section">
-  <div class="gallery-container">
-    <div class="via-card-desafios">
-      <div class="via-grid-card-desafios">
-        <!-- Itens da galeria -->
-        <div class="via-card-borda-container">
-          <div class="via-card-borda"></div>
-          <div class="via-card-borda-text">
-            <h3 class="via-title-card-borda"><strong>Mudança <br>de Cultura</strong></h3>
-          </div>
-        </div>
-        <div class="via-card-borda-container">
-          <div class="via-card-borda"></div>
-          <div class="via-card-borda-text">
-            <h3 class="via-title-card-borda"><strong>Capacitação e <br>treinamentos</strong></h3>
-          </div>
-        </div>
-        <div class="via-card-borda-container">
-          <div class="via-card-borda"></div>
-          <div class="via-card-borda-text">
-            <h3 class="via-title-card-borda"><strong>Upskilling e <br>Reskilling</strong></h3>
-          </div>
-        </div>
-        <!-- Adicione mais itens conforme necessário -->
-      </div>
-    </div>
+<section class="gallery-line">
 
-    <!-- Repetindo os itens para o loop infinito -->
-    <div class="via-card-desafios">
-      <div class="via-grid-card-desafios">
-        <div class="via-card-borda-container">
-          <div class="via-card-borda"></div>
-          <div class="via-card-borda-text">
-            <h3 class="via-title-card-borda"><strong>Mudança <br>de Cultura</strong></h3>
-          </div>
-        </div>
-        <div class="via-card-borda-container">
-          <div class="via-card-borda"></div>
-          <div class="via-card-borda-text">
-            <h3 class="via-title-card-borda"><strong>Capacitação e <br>treinamentos</strong></h3>
-          </div>
-        </div>
-        <div class="via-card-borda-container">
-          <div class="via-card-borda"></div>
-          <div class="via-card-borda-text">
-            <h3 class="via-title-card-borda"><strong>Upskilling e <br>Reskilling</strong></h3>
-          </div>
-        </div>
-        <!-- Adicione mais itens conforme necessário -->
+  <h1 class="gallery-title">EVENTOS</h1>
+
+  <div class="gallery-row">
+
+    {{#get "posts" filter="slug:ativacoes-instituicoes-pb"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
       </div>
-    </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:game-dev-camp"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:kick-off"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:semana-nacional-de-ciencia-e-tecnologia"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+
+
   </div>
 </section>

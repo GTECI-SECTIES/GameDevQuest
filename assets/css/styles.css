@@ -12,17 +12,13 @@
 	margin: 0;
 }
 
-.kg-card img,
-.kg-image-card img {
-	width: 300px;
-	/* Ajuste o tamanho conforme necessário */
-	height: 100px;
-	/* Ajuste o tamanho conforme necessário */
-	object-fit: contain;
-	/* Garante que a imagem não distorça */
+.kg-image-card img{
 	display: block;
-	margin: auto;
-	gap: 50px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+
 }
 
 
@@ -665,242 +661,7 @@ a:hover {
 }
 
 
-/*--------------------------PAGE BOLSISTAS -------------------------------- */
 
-/* Seção de bolsistas */
-.holders-section {
-	background-image: url("../images/bg-bolsistas.png");
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
-	color: white;
-	padding: 50px 20px;
-	text-align: justify;
-}
-
-/* Título da seção */
-.section-title {
-	font-size: 28px;
-	font-weight: bold;
-	margin-bottom: 30px;
-	text-align: left;
-	max-width: 950px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* Cartão de bolsistas */
-.holders-card {
-	background: white;
-	color: #333;
-	padding: 70px;
-	border-radius: 15px;
-	margin: 50px auto;
-	max-width: 800px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Título do edital */
-.holders-title {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 25px;
-	text-align: left;
-}
-
-/* Lista de bolsistas */
-.holders-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-	gap: 10px;
-	justify-content: center;
-}
-
-/* Item do bolsista */
-.holders-item {
-	background: #f2f2f2;
-	padding: 10px 15px;
-	border-radius: 14px;
-	text-align: center;
-	font-size: 14px;
-	color: #737373;
-	font-weight: 500;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	/* Borda suave */
-
-}
-
-/*--------------------------------------------------- */
-
-/* Seção dos bolsistas */
-.cardholders-section {
-	background-image: url("../images/bg-bolsistas.png");
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
-	color: white;
-	padding: 50px 20px;
-	text-align: justify;
-}
-
-/* Cartão de bolsista */
-.cardholders-card {
-	background: white;
-	color: #333;
-	padding: 70px;
-	border-radius: 15px;
-	margin: 50px auto;
-	max-width: 800px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Conteúdo do cartão */
-.cardholders-content {
-	display: flex;
-	align-items: center;
-	gap: 50px;
-}
-
-/* Imagem do bolsista */
-.cardholders-image {
-	position: relative;
-	width: 150px;
-	height: 150px;
-}
-
-.cardholders-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-}
-
-/* Ícone sobre a imagem */
-.icon-overlay {
-	position: absolute;
-	bottom: -10px;
-	right: -10px;
-	width: 50px;
-	height: 50px;
-}
-
-.icon-overlay img {
-	width: 100%;
-	height: 100%;
-}
-
-/*--------------Informações do bolsista------------------- */
-.cardholders-info {
-	flex: 1;
-}
-
-.cardholders-info h3 {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-/* Lista de informações */
-/* Lista de informações */
-.cardholders-info ul {
-	list-style: none;
-	padding: 0;
-}
-
-.cardholders-info ul li {
-	font-size: 14px;
-	margin-bottom: 5px;
-	display: flex;
-	font-weight: 500;
-	align-items: center;
-	position: relative;
-	/* Para permitir o uso do ::before */
-	padding-left: 25px;
-	/* Espaçamento à esquerda para os bullets */
-	line-height: 1.5;
-	/* Alinha o texto com o bullet */
-}
-
-/* Adicionando bullets roxos */
-.cardholders-info ul li::before {
-	content: '\2022';
-	/* Bullet padrão */
-	position: absolute;
-	left: 0;
-	color: purple;
-	/* Cor roxa para o bullet */
-	font-size: 50px;
-	/* Tamanho do bullet */
-	top: 40%;
-	/* Ajusta o posicionamento vertical do bullet */
-	transform: translateY(-50%);
-	/* Centraliza verticalmente */
-}
-
-/* Botão */
-.cardholders-button {
-	background: #f2f2f2;
-	padding: 10px 15px;
-	border-radius: 10px;
-	font-weight: 500;
-	font-size: 14px;
-	cursor: pointer;
-	margin-top: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-
-
-}
-
-.cardholders-button:hover {
-	background: #ddd;
-}
-
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-	.cardholders-content {
-		flex-direction: column;
-		/* Alinha os itens em uma coluna */
-		align-items: center;
-		/* Centraliza os itens horizontalmente */
-	}
-
-	.cardholders-card {
-		padding: 30px;
-		/* Reduz o padding para telas menores */
-	}
-
-	.cardholders-info {
-		text-align: justify;
-		/* Centraliza o conteúdo em telas pequenas */
-	}
-
-	.cardholders-info h3 {
-		text-align: center;
-		/* Centraliza o conteúdo em telas pequenas */
-	}
-
-	.cardholders-image {
-		width: 120px;
-		/* Ajusta o tamanho da imagem para telas menores */
-		height: 120px;
-	}
-
-	.cardholders-info ul li {
-		font-size: 12px;
-		/* Reduz o tamanho da fonte dos itens */
-	}
-
-	.cardholders-button {
-		width: 100%;
-		/* Faz o botão ocupar toda a largura disponível */
-		text-align: center;
-		/* Centraliza o texto dentro do botão */
-	}
-}
 
 /*--------------------------FINISH-------------------------------- */
 
@@ -961,11 +722,43 @@ a:hover {
 }
 
 
+/*------------- PAGE TEMPLATE ---------------------*/
+
+/* Seção dos bolsistas */
+.cardholders-section {
+	background-color: #0e0e12;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 50px 20px;
+	text-align: justify;
+}
+
+.cardholders-section h1{
+	text-align: center;
+	font-size: x-large;
+	padding: 10px;
+}
+
+
+/* Cartão de bolsista */
+.cardholders-card {
+	background: white;
+	color: #333;
+	padding: 70px;
+	border-radius: 15px;
+	margin: 50px auto;
+	max-width: 800px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 /*-----------------ABOUT SECTION----------------------------------- */
 .about-ambiente {
 	background: linear-gradient(90deg, #080e1f 50%, #fff 50%);
 	padding: 6rem 2rem;
-	font-family: 'Inter', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .about-container {
@@ -978,8 +771,9 @@ a:hover {
 }
 
 .about-left h2 {
+	font-family: 'Poppins', sans-serif;
 	font-size: 2.5rem;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 	line-height: 1.3;
 }
@@ -1000,11 +794,13 @@ a:hover {
 .about-features li {
 	display: flex;
 	align-items: flex-start;
+	font-family: 'Poppins', sans-serif;
 	gap: 1rem;
 	color: #333;
 	font-size: 1rem;
 	line-height: 1.5;
 }
+
 
 .icon {
 	width: 3rem;
@@ -1023,33 +819,33 @@ a:hover {
 
 
 /*-----------------GALERY SECTION----------------------------------- */
-/* Container da galeria */
-.gallery-section {
-	padding: 2rem;
+.gallery-line {
+	padding: 6rem 2rem;
 	background-color: #f7f7f7;
-  }
-  
-  .gallery-container {
-	display: flex;
-	gap: 1rem;
-	overflow: hidden;
-	justify-content: flex-start;
-	width: 100%;
-	animation: slide 20s linear infinite; /* Animação contínua */
-  }
-  
-  /* Cartões */
-  .via-card-desafios {
-	display: flex;
-	gap: 1rem;
-	flex-shrink: 0;
-  }
-  
-  .via-grid-card-desafios {
-	display: flex;
-	gap: 1rem;
-  }
-  
+}
+
+.gallery-row {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	justify-content: center;
+	gap: 4rem;
+	flex-wrap: nowrap;
+}
+
+.gallery-title{
+
+	max-width: 1200px;
+	margin: 0 auto 2rem auto;
+	color: #0e0e12;
+	font-size: 2rem;
+	text-align: justify;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+
   .via-card-borda-container {
 	background-color: #fff;
 	width: 250px;
@@ -1065,14 +861,17 @@ a:hover {
   .via-card-borda {
 	width: 100%;
 	height: 100%;
-	background-color: #e0e0e0;
+	background-size: cover; 
+	background-position: center; 
+	filter: brightness(50%)
+	
   }
   
   .via-card-borda-text {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-	color: #333;
+	color: white;
 	font-size: 1rem;
 	font-weight: bold;
   }
@@ -1083,19 +882,42 @@ a:hover {
 	line-height: 1.5;
   }
   
-  /* Animação de deslizamento contínuo */
-  @keyframes slide {
-	0% {
-	  transform: translateX(0); /* Início na posição normal */
-	}
-	100% {
-	  transform: translateX(-100%); /* Move todos os itens para a esquerda */
-	}
-  }
-  
-  /* Efeito de hover nos cartões */
   .via-card-borda-container:hover {
 	transform: scale(1.1);
 	transition: transform 0.3s ease-in-out;
+  }
+  
+
+  
+/*-----------------TIMELINE SECTION----------------------------------- */
+.dashboard-section {
+	background: linear-gradient(135deg, #0c0f1c, #1b1f30);
+	padding: 4rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Orbitron', sans-serif;
+  }
+  
+  .dashboard-container {
+	max-width: 1200px;
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0 40px rgba(102, 51, 204, 0.4);
+  }
+  
+  .dashboard-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+  }
+  
+  .dashboard-image {
+	display: block;
+	width: 100%;
+	height: auto;
   }
   
