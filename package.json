@@ -1,0 +1,30 @@
+{
+    "name": "tema-pbsf",
+    "description": "Tema criado para a o programa Paraíba sem Fronteiras",
+    "version": "0.1.0",
+    "author": {
+        "name": "Joyce Vicente, Rodolfo Marques",
+        "email": "gteci@secties.pb.gov.br"
+    },
+    "config": {
+        "posts_per_page": 5,
+        "custom": {
+            "logo_fapesq": {
+                "type": "image",
+                "label": "Logo Fapesq"
+            },
+            "logo_secties": {
+                "type": "image",
+                "label": "Logo Secties"
+            },
+            "logo_govbranca": {
+                "type": "image",
+                "label": "Logo GovBranca"
+            },
+            "logo_pbsf": {
+                "type": "image",
+                "label": "Logo GovBranca"
+            }
+        }
+    }
+}

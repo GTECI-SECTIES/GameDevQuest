@@ -1,0 +1,12 @@
+ 
+{{! Extende o layout padrão }}
+{{!< default}}
+
+<section class="posts">
+    {{#foreach posts}}
+        <article>
+            <h2><a href="{{url}}">{{title}}</a></h2>
+            <p>{{excerpt}}</p>
+        </article>
+    {{/foreach}}
+</section>
