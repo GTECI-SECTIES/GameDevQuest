@@ -680,8 +680,10 @@ a:hover {
 .hero-overlay {
 	position: absolute;
 	inset: 0;
-	background: rgba(0, 0, 0, 0.6);
-	/* escurece o fundo */
+	filter: brightness(30%);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	z-index: 1;
 }
 
@@ -862,7 +864,7 @@ a:hover {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-	filter: brightness(50%)
+	filter: brightness(50%);
 }
 
 .via-card-borda-text {
@@ -895,6 +897,7 @@ a:hover {
 }
 
 .timeline-container {
+	background-image: url("../images/bgavatar2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -929,10 +932,18 @@ a:hover {
 /* GRID DOS AVATARES */
 .timeline-steps {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas no desktop */
-	gap: 60px;
+	grid-template-columns: repeat(7, 1fr); /* 4 avatares + 3 setas */
+	gap: 30px;
+	align-items: center;
 	justify-items: center;
-	align-items: start;
+}
+
+.timeline-arrow {
+	width: 40px;
+	height: auto;
+	align-self: center;
+	transform: translateY(170px); /* ajusta verticalmente a seta pra baixo */
+
 }
 
 /* ITEM INDIVIDUAL */
@@ -954,7 +965,7 @@ a:hover {
 	display: block;
 	transition: filter 0.3s ease;
 	filter: brightness(70%);
-	margin-bottom: 0;
+	
 }
 
 /* Destacar o avatar 2 */
@@ -975,10 +986,10 @@ a:hover {
 
 /* TÍTULO DA FASE */
 .timeline-name {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.4;
-	margin: 0;
+	margin: 30px 0 0 0; /* Adiciona espaço acima do nome */
 	min-height: 48px;
 }
 
@@ -988,6 +999,7 @@ a:hover {
 	font-weight: normal;
 	display: block;
 }
+
 
 /* DESCRIÇÃO */
 .timeline-desc {
