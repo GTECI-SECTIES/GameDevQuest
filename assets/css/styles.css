@@ -322,8 +322,9 @@ ul.social-icons {
 }
 
 .hero-logo {
-	max-width: 500px;
-	margin-bottom: 1.5rem;
+	height: 200px;
+	margin-left: -200px;
+	margin-bottom: -4.5rem;
 	animation: float 4s ease-in-out infinite;
 }
 
@@ -332,7 +333,10 @@ ul.social-icons {
 	font-family: "ff-brokenscript-bc-web", serif;
 	font-weight: 700;
 	font-style: normal;
+	padding: 30px;
 }
+
+
 
 /* Animação suave tipo "flutuar" */
 @keyframes float {
@@ -746,6 +750,7 @@ ul.social-icons {
 	}
 }
 
+
 /*-----------------SCHEDULE SECTION----------------------------------- */
 .accordion-section {
 	background-color: #0d001a;
@@ -769,6 +774,7 @@ ul.social-icons {
 	background: none;
 	border: none;
 	color: #fff;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-align: left;
@@ -815,16 +821,6 @@ ul.social-icons {
 	height: auto;
   }
   
-
-
-
-
-
-
-
-
-
-
 
 
 /* ----------------------footer section --------------------*/
