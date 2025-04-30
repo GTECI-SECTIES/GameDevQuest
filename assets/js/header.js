@@ -1,23 +1,3 @@
-// <!---Script menu sandwich --->
-
-
-function toggleMenu() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('active');
-}
-
-// Fechar o menu ao clicar fora dele
-document.addEventListener('click', function (event) {
-    const sidebar = document.getElementById('sidebar');
-    const toggleButton = document.querySelector('.menu-toggle');
-
-    // Verifica se o clique foi fora do menu e do botão de toggle
-    if (!sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
-        sidebar.classList.remove('active'); // Fecha o menu
-    }
-});
-
-
 
 // <!--- Script feito sanfona menu sanduiche --->
 
