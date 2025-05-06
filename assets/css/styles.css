@@ -801,8 +801,9 @@ a:hover {
 
 	/*-------------ABOUT SECTION---------------------*/
 
+
 	.about-ambiente {
-		background: linear-gradient(0deg, #fff 50%, #0d001a 50%);
+		background: linear-gradient(-180deg, #fff 50%, #7c3aed 50%);
 		/* Alterando a direção do gradiente */
 	}
 
@@ -820,12 +821,19 @@ a:hover {
 
 	.about-features {
 
-		gap: 1rem;
+		gap: 0rem;
 	}
 
 	.about-features li {
 		font-size: 0.9rem;
 	}
+    
+	.about-divider::before , .letter-g {
+
+		display: none;
+	}
+
+	
 
 
 	/*--------------------- GALERY SECTION----------*/
