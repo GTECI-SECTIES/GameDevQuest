@@ -110,7 +110,68 @@ a {
 }
 
 
-
+/* Botão menu hambúrguer */
+.menu-toggle {
+	background: transparent;
+	border: none;
+	font-size: 1.8rem;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 1rem;
+  }
+  
+  /* Esconde completamente fora da tela */
+  .side-menu {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 250px;
+	height: 100vh;
+	padding: 2rem 1.5rem;
+	z-index: 999;
+	overflow-y: auto;
+	transition: left 0.3s ease;
+  
+	background: rgba(255, 255, 255, 0.1); /* Leve transparência branca */
+	backdrop-filter: blur(12px); /* Efeito de vidro fosco */
+	-webkit-backdrop-filter: blur(12px);
+	border-right: 1px solid rgba(255, 255, 255, 0.2); /* contorno sutil */
+	box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .side-menu ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 2rem;
+  }
+  
+  .side-menu ul li {
+	margin-bottom: 1.5rem;
+  }
+  
+  .side-menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-family: "Montserrat", sans-serif;
+	transition: color 0.2s ease;
+  }
+  
+  .side-menu ul li a:hover {
+	color: #d49bff;
+  }
+  
+  /* Classe para exibir o menu */
+  .side-menu.active {
+	left: 0;
+  }
+  
+  /* Classe utilitária */
+  .hidden {
+	display: block;
+  }
+  
 
 
 /*-----------------HERO SECTION----------------------------------- */
@@ -139,12 +200,12 @@ a {
 	position: relative;
 	z-index: 2;
 	text-align: center;
-	max-width: 800px;
+	max-width: 1200px;
 	padding: 2rem;
 }
 
 .hero-logo {
-	height: 250px;
+	height: 350px;
 	width: auto;
 	animation: float 4s ease-in-out infinite;
 }
@@ -155,6 +216,8 @@ a {
 	font-weight: 700;
 	font-style: normal;
 	padding: 30px;
+	margin-top: 0px;
+
 }
 
 
@@ -590,33 +653,23 @@ a {
 	padding: 2rem 0;
 }
 
-.support,
-.partners {
+.support-group {
 	text-align: center;
 	color: #000;
+	width: 100%;
 }
 
-.support-row {
-	display: grid;
-	grid-template-columns: repeat(2, 100px);
-	gap: 3rem;
-	/* aumentei o gap aqui */
+.logo-row {
+	display: flex;
 	justify-content: center;
+	gap: 2rem;
 	margin-top: 1rem;
-}
-
-.partners-row {
-	display: grid;
-	grid-template-columns: repeat(3, 100px);
-	gap: 3rem;
-	/* aumentei o gap aqui também */
-	justify-content: center;
-	margin-top: 1rem;
+	flex-wrap: wrap;
 }
 
 .logo-box {
 	padding: 10px;
-	border-radius: 12px;
+	border-radius: 100px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	display: flex;
 	align-items: center;
@@ -637,13 +690,11 @@ a {
 	object-fit: contain;
 }
 
-/* Cores de fundo específicas */
 .bg-white {
 	background-color: #ffffff;
 }
 
 .bg-gray {
-
 	background-color: #EFEFEF;
 }
 
@@ -651,7 +702,7 @@ a {
 	background-color: #000000;
 }
 
-
+  
 /* ----------------------footer section --------------------*/
 
 footer {
@@ -702,7 +753,7 @@ footer {
 
 /* Logos responsivas */
 .logos img {
-	width: 200px;
+	width: 220px;
 	height: auto;
 	object-fit: contain;
 	display: block;
@@ -855,6 +906,7 @@ a:hover {
 	.about-features {
 
 		gap: 0rem;
+		margin-bottom: -50px;
 	}
 
 	.about-features li {

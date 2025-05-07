@@ -1,14 +1,19 @@
 
-// <!--- Script feito sanfona menu sanduiche --->
+// <!--- Menu sanduiche --->
 
 
-function toggleSubmenu() {
-	const submenu = document.querySelector('.submenu');
-	submenu.classList.toggle('active');
-}
+ const menuToggle = document.getElementById('menu-toggle');
+const sideMenu = document.getElementById('side-menu');
 
+menuToggle.addEventListener('click', () => {
+  sideMenu.classList.toggle('active');
+});
 
-
+document.addEventListener('click', (e) => {
+  if (!sideMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+    sideMenu.classList.remove('active');
+  }
+});
 
 
 // <!--- Script Acessibilidade --->
@@ -49,5 +54,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// <---------------Script barra de busca ----------> 
 

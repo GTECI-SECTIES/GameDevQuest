@@ -2,15 +2,15 @@
 	<div class="header-container">
 		<div class="logo-container">
 			{{#if @custom.logo_fapesq}}
-				<img src="{{@custom.logo_fapesq}}" class="logo logo-desktop" alt="Logo Fapesq">
+			<img src="{{@custom.logo_fapesq}}" class="logo logo-desktop" alt="Logo Fapesq">
 			{{/if}}
 			{{#if @custom.logo_secties}}
-				<img src="{{ @custom.logo_secties}}" class="logo logo-desktop" alt="Logo Secties">{{/if}}
+			<img src="{{ @custom.logo_secties}}" class="logo logo-desktop" alt="Logo Secties">{{/if}}
 			{{#if @custom.logo_govbranca}}
-				<img src="{{@custom.logo_govbranca}}" class="logo logo-desktop" alt="Logo GovBranca">
+			<img src="{{@custom.logo_govbranca}}" class="logo logo-desktop" alt="Logo GovBranca">
 			{{/if}}
 			{{#if @custom.logo_pbsf}}
-				<img src="{{@custom.logo_pbsf}}" class="logo-mobile" alt="Logo PBSF">
+			<img src="{{@custom.logo_pbsf}}" class="logo-mobile" alt="Logo PBSF">
 			{{/if}}
 		</div>
 
@@ -22,7 +22,7 @@
 			<button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
 
 			<button class="gh-search-icon" aria-label="search" data-ghost-search
-				style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; padding: 0; border: 0; color: inherit; background-color: transparent; cursor: pointer; outline: none;">
+				style="display: inline-flex; margin-top: 5px; justify-content: center; align-items: center; width: 32px; height: 32px; padding: 0; border: 0; color: inherit; background-color: transparent; cursor: pointer; outline: none;">
 				<svg width="20" height="20" fill="none" viewBox="0 0 24 24">
 					<path
 						d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z"
@@ -31,13 +31,30 @@
 						fill="currentColor" />
 				</svg>
 			</button>
+
 		</div>
+
+		<!-- Botão Menu Sanduíche -->
+		<button id="menu-toggle" aria-label="Menu Sanduíche" class="menu-toggle">
+			&#9776;
+		</button>
+
+		<!-- Menu Lateral (oculto inicialmente) -->
+		<nav id="side-menu" class="side-menu hidden">
+			<ul>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#eventos">Eventos</a></li>
+				<li><a href="#fases">Fases do Circuito</a></li>
+				<li><a href="#cronograma">Cronograma</a></li>
+				<li><a href="#apoio">Apoio</a></li>
+			</ul>
+		</nav>
+
 
 	</div>
 
 
 </header>
-
 
 <!-- Terceira Section -->
 
