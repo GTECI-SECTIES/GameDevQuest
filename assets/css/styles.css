@@ -134,7 +134,7 @@ a {
   
 	background: rgba(255, 255, 255, 0.1); /* Leve transparência branca */
 	backdrop-filter: blur(12px); /* Efeito de vidro fosco */
-	-webkit-backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(50px);
 	border-right: 1px solid rgba(255, 255, 255, 0.2); /* contorno sutil */
 	box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
   }
@@ -151,7 +151,7 @@ a {
   }
   
   .side-menu ul li a {
-	color: #fff;
+	color: gray;
 	text-decoration: none;
 	font-size: 1.1rem;
 	font-family: "Montserrat", sans-serif;
