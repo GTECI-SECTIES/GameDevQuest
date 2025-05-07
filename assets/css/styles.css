@@ -110,6 +110,7 @@ a {
 }
 
 
+
 /* Botão menu sanduiche */
 .menu-toggle {
 	background: transparent;
@@ -169,12 +170,6 @@ a {
 .side-menu.active {
 	left: 0;
 }
-
-/* Classe utilitária */
-.hidden {
-	display: block;
-}
-
 
 
 /*-----------------HERO SECTION----------------------------------- */
@@ -842,29 +837,9 @@ a:hover {
 	  justify-content: space-between;
 	}
   
-	.menu-toggle {
-		box-sizing: border-box;
-	  }
 	
-	  .side-menu {
-		display: block;
-		left: -100%; /* Inicialmente o menu está fora da tela */
-	  }
   
-	.navbar-container {
-	  display: none;
-	  flex-direction: column;
-	  width: 100%;
-	  text-align: center;
-	}
-  
-	.navbar-link {
-	  padding: 10px 0;
-	}
-  
-	.navbar.active .navbar-container {
-	  display: flex;
-	}
+	
   
 	/*-------------HERO SECTION---------------------*/
   
