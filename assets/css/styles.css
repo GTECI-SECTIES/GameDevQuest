@@ -110,7 +110,7 @@ a {
 }
 
 
-/* Botão menu hambúrguer */
+/* Botão menu sanduiche */
 .menu-toggle {
 	background: transparent;
 	border: none;
@@ -843,9 +843,13 @@ a:hover {
 	}
   
 	.menu-toggle {
-	  display: flex;
-	  margin: 10px;
-	}
+		display: block;
+	  }
+	
+	  .side-menu {
+		display: block;
+		left: -100%; /* Inicialmente o menu está fora da tela */
+	  }
   
 	.navbar-container {
 	  display: none;
