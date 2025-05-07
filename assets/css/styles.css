@@ -843,7 +843,7 @@ a:hover {
 	}
   
 	.menu-toggle {
-		display: block;
+		box-sizing: border-box;
 	  }
 	
 	  .side-menu {
