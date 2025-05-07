@@ -118,10 +118,10 @@ a {
 	color: #fff;
 	cursor: pointer;
 	margin-right: 1rem;
-  }
-  
-  /* Esconde completamente fora da tela */
-  .side-menu {
+}
+
+/* Esconde completamente fora da tela */
+.side-menu {
 	position: fixed;
 	top: 0;
 	left: -100%;
@@ -131,47 +131,50 @@ a {
 	z-index: 999;
 	overflow-y: auto;
 	transition: left 0.3s ease;
-  
-	background: rgba(255, 255, 255, 0.1); /* Leve transparência branca */
-	backdrop-filter: blur(12px); /* Efeito de vidro fosco */
+
+	background: rgba(255, 255, 255, 0.1);
+	/* Leve transparência branca */
+	backdrop-filter: blur(12px);
+	/* Efeito de vidro fosco */
 	-webkit-backdrop-filter: blur(50px);
-	border-right: 1px solid rgba(255, 255, 255, 0.2); /* contorno sutil */
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	/* contorno sutil */
 	box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .side-menu ul {
+}
+
+
+.side-menu ul {
 	list-style: none;
 	padding: 0;
 	margin-top: 2rem;
-  }
-  
-  .side-menu ul li {
+}
+
+.side-menu ul li {
 	margin-bottom: 1.5rem;
-  }
-  
-  .side-menu ul li a {
+}
+
+.side-menu ul li a {
 	color: gray;
 	text-decoration: none;
 	font-size: 1.1rem;
 	font-family: "Montserrat", sans-serif;
 	transition: color 0.2s ease;
-  }
-  
-  .side-menu ul li a:hover {
+}
+
+.side-menu ul li a:hover {
 	color: #d49bff;
-  }
-  
-  /* Classe para exibir o menu */
-  .side-menu.active {
+}
+
+/* Classe para exibir o menu */
+.side-menu.active {
 	left: 0;
-  }
-  
-  /* Classe utilitária */
-  .hidden {
+}
+
+/* Classe utilitária */
+.hidden {
 	display: block;
-  }
-  
+}
+
 
 
 /*-----------------HERO SECTION----------------------------------- */
@@ -702,7 +705,7 @@ a {
 	background-color: #000000;
 }
 
-  
+
 /* ----------------------footer section --------------------*/
 
 footer {
@@ -923,6 +926,21 @@ a:hover {
 
 
 	/*--------------------- GALERY SECTION----------*/
+
+	.gallery-row {
+		flex-direction: column; /* Empilha os itens verticalmente */
+		align-items: center; /* Centraliza os itens */
+		flex-wrap: wrap;
+	}
+
+	.via-card-borda-container {
+		width: 90%; /* O quadro ocupa 90% da largura da tela */
+		height: auto; /* Altura se adapta ao conteúdo */
+		margin-bottom: 2rem; /* Adiciona espaço entre os quadros */
+	}
+
+
+	/*--------------------- TIMELINE SECTION----------*/
 
 	.timeline-container {
 		width: 100%;
