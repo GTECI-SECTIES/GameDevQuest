@@ -868,11 +868,13 @@ a:hover {
 	.about-left h2 {
 	  font-size: 2rem;
 	  text-align: center;
+	  margin-top: -35px;
 	}
   
 	.about-features {
 	  gap: 0rem;
 	  margin-bottom: -50px;
+	  margin-left: 0px;
 	}
   
 	.about-features li {
