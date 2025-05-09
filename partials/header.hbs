@@ -43,15 +43,19 @@
 
 
 <!-- Menu Lateral (oculto inicialmente) -->
-		<nav id="side-menu" class="side-menu hidden">
-			<ul>
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#eventos">Eventos</a></li>
-				<li><a href="#fases">Fases do Circuito</a></li>
-				<li><a href="#cronograma">Cronograma</a></li>
-				<li><a href="#apoio">Apoio</a></li>
-			</ul>
-		</nav>
+<nav id="side-menu" class="side-menu hidden">
+	<ul>
+		{{#is "home"}}
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#eventos">Eventos</a></li>
+			<li><a href="#fases">Fases do Circuito</a></li>
+			<li><a href="#cronograma">Cronograma</a></li>
+			<li><a href="#apoio">Apoio</a></li>
+		{{else}}
+			<li><a href="/">Início</a></li>
+		{{/is}}
+	</ul>
+</nav>
 
 
 

@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const postTitle = document.querySelector("h1, .post-title");
+    if (postTitle && postTitle.textContent.toLowerCase().includes("fase")) {
+        // Se o título contém "fase", não executa o restante
+        return;
+    }
+
     const images = [...document.querySelectorAll('.kg-image-card img, .kg-gallery-image img')];
     let currentIndex = 0;
 
-    // Criação do HTML do lightbox
     const lightbox = document.createElement('div');
     lightbox.id = 'lightbox';
     lightbox.innerHTML = `
@@ -13,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.body.appendChild(lightbox);
 
-    // Estilo do lightbox
     const style = document.createElement('style');
     style.textContent = `
         #lightbox {
@@ -87,4 +91,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
