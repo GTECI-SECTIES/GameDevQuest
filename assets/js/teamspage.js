@@ -114,61 +114,61 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         @media (max-width: 768px) {
-           .parceiros_grid {
-        grid-template-columns: 1fr;
-    }
+            .parceiros_grid {
+                grid-template-columns: 1fr;
+            }
 
-    .parceiros_grid p {
-        flex-direction: column;
-        text-align: center;
-        white-space: normal;
-    }
+            .parceiros_grid p {
+                flex-direction: column;
+                text-align: center;
+                white-space: normal;
+            }
 
-    .parceiros_grid p img {
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-    }
+            .parceiros_grid p img {
+                width: 100%;
+                height: auto;
+                max-width: 250px;
+            }
 
-    .tooltip {
-        position: absolute;
-        width: calc(100% - 40px);
-        left: 20px;
-        top: 100%;
-        margin-top: 10px;
-        z-index: 10;
-    }
+            .tooltip {
+                position: absolute;
+                width: calc(100% - 40px);
+                left: 20px;
+                top: 100%;
+                margin-top: 10px;
+                z-index: 10;
+            }
 
-    .parceiro-bloco {
-        position: relative;
-    }
+            .parceiro-bloco {
+                position: relative;
+            }
         }
         `;
         document.head.appendChild(style);
 
         const container = document.querySelector(".content_container");
         if (container) {
-            // Criar a estrutura h1, h2 e grid
             const h1 = container.querySelector("h1");
-            const subtitulo = document.createElement("h2");
-            subtitulo.textContent = "Conheça nossos parceiros por etapa do projeto";
+            const h2 = container.querySelector("h2");
 
+            // Garante que o subtítulo fique logo após o h1
+            if (h2 && h1 && h2 !== h1.nextElementSibling) {
+                container.insertBefore(h2, h1.nextSibling);
+            }
+
+            // Cria a grid e organiza os itens
             const gridWrapper = document.createElement("div");
             gridWrapper.className = "parceiros_grid";
 
-            // Mover todos os elementos que não são h1/h2 para a grid
             const children = Array.from(container.children).filter(
-                el => el !== h1
+                el => el !== h1 && el !== h2
             );
 
-            container.insertBefore(subtitulo, h1.nextSibling);
             container.appendChild(gridWrapper);
-
             children.forEach(el => {
-                if (el !== subtitulo) gridWrapper.appendChild(el);
+                gridWrapper.appendChild(el);
             });
 
-            // Agrupa <p> e <ul> como tooltip
             const items = Array.from(gridWrapper.children);
             for (let i = 0; i < items.length; i++) {
                 const el = items[i];
@@ -183,7 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
 
-            // Mostra/oculta o balão (tooltip)
             gridWrapper.querySelectorAll(".parceiro-bloco").forEach(bloco => {
                 const p = bloco.querySelector("p");
                 const ul = bloco.querySelector("ul");

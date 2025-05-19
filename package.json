@@ -57,7 +57,13 @@
             "logo_parceiro_3": {
                 "type": "image",
                 "label": "Logo Parceiro 3"
+            }, 
+            "teamssection_button": {
+                "type": "boolean",
+                "default": true,
+                "label": "Mostrar sessão equipes por fase"
             }
+
         }
     }
 }
