@@ -24,6 +24,39 @@
             "logo_pbsf": {
                 "type": "image",
                 "label": "Logo GovBranca"
+            },
+            "logo_patrocinio_1": {
+                "type": "image",
+                "label": "Logo Patrocínio 1"
+            },
+            "logo_patrocinio_2": {
+                "type": "image",
+                "label": "Logo Patrocínio 2"
+            },
+            
+            "logo_apoio_1": {
+                "type": "image",
+                "label": "Logo Apoio 1"
+            },
+            "logo_apoio_2": {
+                "type": "image",
+                "label": "Logo Apoio 2"
+            },
+            "logo_apoio_3": {
+                "type": "image",
+                "label": "Logo Apoio 3"
+            },
+            "logo_parceiro_1": {
+                "type": "image",
+                "label": "Logo Parceiro 1"
+            },
+            "logo_parceiro_2": {
+                "type": "image",
+                "label": "Logo Parceiro 2"
+            },
+            "logo_parceiro_3": {
+                "type": "image",
+                "label": "Logo Parceiro 3"
             }
         }
     }
