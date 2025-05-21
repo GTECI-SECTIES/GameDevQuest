@@ -1,0 +1,16 @@
+ {{!< default}}
+
+{{#post}}
+  <section class="cardholders-section">
+  <div class="cardholders-card">
+   <article class="content_container">
+        <h1>{{title}}</h1>
+        {{{content}}}
+    </article>
+  </div>
+  </section>
+{{/post}}
+
+{{#is "page"}}
+    <script src="{{asset "js/lightbox.js"}}"></script>
+{{/is}}
