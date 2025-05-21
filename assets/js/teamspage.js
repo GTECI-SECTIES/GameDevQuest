@@ -48,13 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
             max-width: 380px;
         }
 
-        .parceiro-bloco p {
+       .parceiro-bloco p {
+            height: 200px; /* define um tamanho padrão fixo para o "quadro" */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 12px 12px;
             background: linear-gradient(135deg, #6b46c1, #9f7aea);
-            padding: 24px 16px;
             border-radius: 48px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             font-size: 1rem;
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
-            height: 140px;
+            overflow: hidden; /* evita que a imagem ultrapasse */
         }
 
         .parceiro-bloco p:hover {
@@ -72,11 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
             box-shadow: 0 6px 16px rgba(0,0,0,0.1);
         }
 
-        .parceiro-bloco p img {
-            max-width: 200px;
-            max-height: 90px;
-            width: auto;
-            height: auto;
+       .parceiro-bloco p img {
+            width: 250px;
+            height: 100px;
             object-fit: contain;
             margin-bottom: 12px;
             border-radius: 8px;
@@ -84,7 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
             padding: 8px;
             box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
             transition: transform 0.3s ease;
+
         }
+
 
 
         .tooltip {
@@ -118,25 +119,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         @media (max-width: 768px) {
-            .parceiros_grid {
-                grid-template-columns: 1fr;
-            }
+        .parceiros_grid {
+            grid-template-columns: 1fr;
+        }
 
-            .parceiro-bloco {
-                max-width: 100%;
-            }
+        .parceiro-bloco {
+            max-width: 100%;
+        }
 
-            .parceiro-bloco p {
-                height: auto;
-                padding: 20px;
-            }
+        .parceiro-bloco p {
+            height: 220px; 
+            padding: 20px;
+        }
 
-            .parceiro-bloco p img {
-                width: 80px;
-                height: auto;
-            }
-
-            .tooltip {
+        .parceiro-bloco p img {
+            width: 100px;
+            height: 60px;
+        }
+        .tooltip {
                 width: 100%;
                 left: 0;
             }

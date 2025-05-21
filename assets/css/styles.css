@@ -939,6 +939,13 @@ a:hover {
 		justify-content: space-between;
 	}
 
+    .top-logo {
+        max-width: 150%;
+        margin: 20px auto -60px auto;
+        padding: 0 16px;
+    }
+
+
 
 
 
@@ -1016,7 +1023,7 @@ a:hover {
 	}
 
 
-	/*--------------------- RESPONSIVO - TEAMS SECTION ----------*/
+	/*--------------------- TEAMS SECTION ----------*/
 
    .teams-row {
     flex-direction: column;
