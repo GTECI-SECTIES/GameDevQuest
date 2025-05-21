@@ -11,8 +11,13 @@
     <a href="{{url}}" class="teams-card-container">
       <div class="teams-card-bg" style="background-image: url('{{feature_image}}');"></div>
       <div class="teams-card-text">
-        <h3 class="teams-card-title"><strong>Fase 1</strong></h3>
-        <p class="teams-card-desc">Conheça as equipes que iniciaram o desafio.</p>
+        <h3 class="teams-card-title">
+          <strong>{{@custom.teams1_title}}</strong>
+        </h3>
+        <p class="teams-card-desc">
+          {{@custom.teams1_description}}
+        </p>
+
       </div>
     </a>
     {{/foreach}}
@@ -23,8 +28,12 @@
     <a href="{{url}}" class="teams-card-container">
       <div class="teams-card-bg" style="background-image: url('{{feature_image}}');"></div>
       <div class="teams-card-text">
-        <h3 class="teams-card-title"><strong>Fase 2</strong></h3>
-        <p class="teams-card-desc">Equipes que avançaram para a segunda etapa.</p>
+        <h3 class="teams-card-title">
+          <strong>{{@custom.teams2_title}}</strong>
+        </h3>
+        <p class="teams-card-desc">
+          {{@custom.teams2_description}}
+        </p>
       </div>
     </a>
     {{/foreach}}
@@ -35,8 +44,12 @@
     <a href="{{url}}" class="teams-card-container">
       <div class="teams-card-bg" style="background-image: url('{{feature_image}}');"></div>
       <div class="teams-card-text">
-        <h3 class="teams-card-title"><strong>Fase 3</strong></h3>
-        <p class="teams-card-desc">Finalistas do circuito Game Dev Quest.</p>
+        <h3 class="teams-card-title">
+          <strong>{{@custom.teams3_title}}</strong>
+        </h3>
+        <p class="teams-card-desc">
+          {{@custom.teams3_description}}
+        </p>
       </div>
     </a>
     {{/foreach}}

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const style = document.createElement("style");
         style.textContent = `
         .content_container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
             display: flex;
@@ -37,47 +37,55 @@ document.addEventListener("DOMContentLoaded", () => {
         .parceiros_grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 24px;
             width: 100%;
+            justify-items: center;
         }
 
-        .parceiros_grid p {
+        .parceiro-bloco {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .parceiro-bloco p {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 20px;
-            background: #7c3aed;
-            padding: 18px 26px;
-            border-radius: 40px;
+            background: linear-gradient(135deg, #6b46c1, #9f7aea);
+            padding: 24px 16px;
+            border-radius: 48px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            font-size: 1.2rem;
-            font-weight: 500;
+            font-size: 1rem;
+            font-weight: 600;
             color: white;
             margin: 0;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            white-space: nowrap;
             text-align: center;
+            height: 140px;
         }
 
-        .parceiros_grid p span {
-            display: inline-block;
-            line-height: 1;
-        }
-
-        .parceiros_grid p img {
-            width: 200px;
-            height: 70px;
-            object-fit: contain;
-            border-radius: 100px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .parceiros_grid p:hover {
-            transform: scale(1.02);
+        .parceiro-bloco p:hover {
+            transform: scale(1.03);
             box-shadow: 0 6px 16px rgba(0,0,0,0.1);
         }
+
+        .parceiro-bloco p img {
+            max-width: 200px;
+            max-height: 90px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px;
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
 
         .tooltip {
             display: none;
@@ -109,41 +117,33 @@ document.addEventListener("DOMContentLoaded", () => {
             text-decoration: underline;
         }
 
-        .parceiro-bloco {
-            position: relative;
-        }
-
         @media (max-width: 768px) {
             .parceiros_grid {
                 grid-template-columns: 1fr;
             }
 
-            .parceiros_grid p {
-                flex-direction: column;
-                text-align: center;
-                white-space: normal;
+            .parceiro-bloco {
+                max-width: 100%;
             }
 
-            .parceiros_grid p img {
-                width: 100%;
+            .parceiro-bloco p {
                 height: auto;
-                max-width: 250px;
+                padding: 20px;
+            }
+
+            .parceiro-bloco p img {
+                width: 80px;
+                height: auto;
             }
 
             .tooltip {
-                position: absolute;
-                width: calc(100% - 40px);
-                left: 20px;
-                top: 100%;
-                margin-top: 10px;
-                z-index: 10;
-            }
-
-            .parceiro-bloco {
-                position: relative;
+                width: 100%;
+                left: 0;
             }
         }
         `;
+
+
         document.head.appendChild(style);
 
         const container = document.querySelector(".content_container");
@@ -203,3 +203,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+

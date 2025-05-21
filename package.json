@@ -33,7 +33,6 @@
                 "type": "image",
                 "label": "Logo Patrocínio 2"
             },
-            
             "logo_apoio_1": {
                 "type": "image",
                 "label": "Logo Apoio 1"
@@ -57,13 +56,36 @@
             "logo_parceiro_3": {
                 "type": "image",
                 "label": "Logo Parceiro 3"
-            }, 
+            },
             "teamssection_button": {
                 "type": "boolean",
                 "default": true,
                 "label": "Mostrar sessão equipes por fase"
+            },
+            "teams1_title": {
+                "type": "text",
+                "label": "Título da seção de equipes"
+            },
+            "teams1_description": {
+                "type": "text",
+                "label": "Descrição da seção de equipes"
+            },
+             "teams2_title": {
+                "type": "text",
+                "label": "Título da seção de equipes"
+            },
+            "teams2_description": {
+                "type": "text",
+                "label": "Descrição da seção de equipes"
+            },
+             "teams3_title": {
+                "type": "text",
+                "label": "Título da seção de equipes"
+            },
+            "teams3_description": {
+                "type": "text",
+                "label": "Descrição da seção de equipes"
             }
-
         }
     }
 }

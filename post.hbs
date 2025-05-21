@@ -1,21 +1,19 @@
- {{!< default}}
+{{!< default}}
 
 {{#post}}
 <section class="cardholders-section">
   <div class="cardholders-card">
-   <article class="content_container">
+        <img src="{{asset "images/devname.png"}}" alt="Logo do Projeto" class="top-logo" />
+    <article class="content_container">
         <h1>{{title}}</h1>
         {{{content}}}
     </article>
   </div>
-  </section>
-  {{/post}}
+</section>
+{{/post}}
 
 {{#is "post"}}
     <script src="{{asset "js/lightbox.js"}}"></script>
 {{/is}}
 
-
-    <script src="{{asset "js/teamspage.js"}}"></script>
-
-
+<script src="{{asset "js/teamspage.js"}}"></script>
