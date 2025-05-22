@@ -262,7 +262,7 @@ a {
 .cardholders-card {
 	background: white;
 	color: #333;
-	padding: 70px;
+	padding: 50px;
 	border-radius: 15px;
 	margin: 50px auto;
 	max-width: 1000px;
@@ -270,16 +270,16 @@ a {
 }
 
 .top-logo {
-    display: flex;
+   	display: flex;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: -80px;
+    margin-top: 50px;
+    margin-bottom: -130px;
     height: auto;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 450px;
+    max-width: 600px;
 }
 
 

@@ -20,6 +20,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const style = document.createElement('style');
     style.textContent = `
+
+        .content_container {
+        max-width: 800px;
+        margin: 2rem auto;
+        color: #222;
+        line-height: 1.6;
+        }
+
+        .cardholders-section h1 {
+        text-align: center;
+        font-size: xx-large;
+        padding: 10px;
+        }
+
+        .titulo-evento {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #111;
+        letter-spacing: 0.03em;
+        }
+
+        .texto-evento p {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 2rem;
+        text-align: justify;
+        }
         #lightbox {
             display: none;
             position: fixed;
@@ -52,6 +81,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         .lb-prev { left: 10px; }
         .lb-next { right: 10px; }
+
+        /* Responsividade */
+        @media screen and (max-width: 600px) {
+
+        .cardholders-section h1 {
+            text-align: center;
+            font-size: larger;
+        }
+        .titulo-evento {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .texto-evento p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .lb-close,
+        .lb-prev,
+        .lb-next {
+            font-size: 30px;
+            padding: 12px;
+        }
+
+        #lightbox .lb-img {
+            max-width: 95%;
+            max-height: 70vh;
+        }
     `;
     document.head.appendChild(style);
 

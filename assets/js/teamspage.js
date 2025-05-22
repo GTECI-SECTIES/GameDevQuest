@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .content_container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 10px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
