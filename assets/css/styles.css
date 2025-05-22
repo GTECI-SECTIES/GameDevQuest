@@ -46,7 +46,7 @@ a {
 .header {
 	background-color: #0d001a;
 	color: #f0f0ff;
-	padding: 2px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
 }
 
 .header-container {
@@ -60,11 +60,11 @@ a {
 
 .logo-container {
 	grid-column: 1 / 12;
-	max-height: 50px;
+	max-height: 65px;
 }
 
 .logo {
-	max-height: 35px;
+	max-height: 45px;
 	margin: 10px;
 }
 
@@ -745,62 +745,80 @@ a {
 }
 
 /* ----------------------partners section --------------------*/
-.support-section {
+.support-section-vertical {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.support-column {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 4rem;
-	padding: 2rem 0;
+	gap: 1.5rem;
+	min-width: 250px;
+
 }
 
-.support-group {
-	text-align: center;
-	color: #000;
-	width: 100%;
-}
-
-.logo-row {
-	display: flex;
-	justify-content: center;
-	gap: 2rem;
-	margin-top: 1rem;
-	flex-wrap: wrap;
+.support-column h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #000;
 }
 
 .logo-box {
-	padding: 10px;
-	border-radius: 100px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100px;
-	height: 100px;
-	transition: transform 0.3s ease;
+  padding: 10px;
+  border-radius: 35px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
 }
 
 .logo-box:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
+/* Destaque para a primeira logo de cada coluna */
+.logo-box.destaque {
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem normal */
 .support-img,
 .partner-img {
-	width: 80%;
-	height: 80%;
-	object-fit: contain;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* Imagem dentro do destaque – ligeiramente maior */
+.logo-box.destaque .support-img,
+.logo-box.destaque .partner-img {
+  width: 90%;
+  height: 90%;
 }
 
 .bg-white {
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .bg-gray {
-	background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .bg-black {
-	background-color: #000000;
+  background-color: #000000;
 }
+
 
 
 /* ----------------------footer section --------------------*/
