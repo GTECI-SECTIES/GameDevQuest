@@ -99,11 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
             margin-bottom: 1.5rem;
         }
 
-        .lb-close,
         .lb-prev,
         .lb-next {
             font-size: 30px;
             padding: 12px;
+            top: 30%;
         }
 
         #lightbox .lb-img {
