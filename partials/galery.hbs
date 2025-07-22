@@ -1,0 +1,84 @@
+<section id="eventos" class="gallery-line">
+
+  <h1 class="gallery-title">Eventos</h1>
+
+  <div class="gallery-row">
+
+
+    {{#get "posts" filter="slug:da-forja-a-arena-rumo-ao-coliseu-dos-campeoes"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:games-com-latam"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+
+    {{#get "posts" filter="slug:ativacoes-gdq"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:game-dev-camp"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:kick-off"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+    {{#get "posts" filter="slug:semana-nacional-de-ciencia-e-tecnologia"}}
+    {{#foreach posts}}
+    <a href="{{url}}" class="via-card-borda-container">
+      <div class="via-card-borda" style="background-image: url('{{feature_image}}');">
+      </div>
+      <div class="via-card-borda-text">
+        <h3 class="via-title-card-borda"><strong>{{title}}</strong></h3>
+      </div>
+    </a>
+    {{/foreach}}
+    {{/get}}
+
+
+
+  </div>
+</section>
