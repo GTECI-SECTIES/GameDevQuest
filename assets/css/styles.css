@@ -75,7 +75,7 @@ a {
 /*  acessibilidade  */
 
 .accessibility-options {
-	grid-column: 12 / 20;
+	grid-column: 10 / 20;
 	display: flex;
 	gap: 10px;
 	justify-content: flex-start;
@@ -109,7 +109,24 @@ a {
 	color: white;
 }
 
+.language-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+}
 
+.language-button:hover {
+
+    color: #d49bff;
+
+
+}
 
 /* Botão menu sanduiche */
 .menu-toggle {

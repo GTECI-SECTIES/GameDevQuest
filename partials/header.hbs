@@ -5,7 +5,8 @@
 			<img src="{{@custom.logo_fapesq}}" class="logo logo-desktop" alt="Logo Fapesq">
 			{{/if}}
 			{{#if @custom.logo_secties}}
-			<img src="{{ @custom.logo_secties}}" class="logo logo-desktop" alt="Logo Secties">{{/if}}
+			<img src="{{ @custom.logo_secties}}" class="logo logo-desktop" alt="Logo Secties">
+			{{/if}}
 			{{#if @custom.logo_govbranca}}
 			<img src="{{@custom.logo_govbranca}}" class="logo logo-desktop" alt="Logo GovBranca">
 			{{/if}}
@@ -16,10 +17,14 @@
 
 		<div class="accessibility-options">
 			<a href="https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior"
-				class="acessibility-portal">Portal Secties</a>
-			<p>Acessibilidade</p>
-			<button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
-			<button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+				class="acessibility-portal" data-i18n="portal_secties">Portal Secties</a>
+			
+			<p data-i18n="accessibility_label">Acessibilidade</p>
+			
+			<button id="increase-font" aria-label="Aumentar tamanho da fonte" data-i18n="increase_font">A+</button>
+			<button id="decrease-font" aria-label="Diminuir tamanho da fonte" data-i18n="decrease_font">A-</button>
+
+			<a href="#" class="language-button">EN-US</a>
 
 			<button class="gh-search-icon" aria-label="search" data-ghost-search
 				style="display: inline-flex; justify-content: center; align-items: center; width: 32px; margin-top: 5px; height: 32px; padding: 0; border: 0; color: inherit; background-color: transparent; cursor: pointer; outline: none;">
@@ -32,35 +37,28 @@
 				</svg>
 			</button>
 		</div>
-		
-		<!-- Botão Menu Sanduíche -->
-			<button id="menu-toggle" aria-label="Menu Sanduíche" class="menu-toggle">
-				&#9776;
-			</button>
-	</div>
 
+		<!-- Botão Menu Sanduíche -->
+		<button id="menu-toggle" aria-label="Menu Sanduíche" class="menu-toggle">&#9776;</button>
+	</div>
 </header>
 
-
-<!-- Menu Lateral (oculto inicialmente) -->
+<!-- Menu Lateral -->
 <nav id="side-menu" class="side-menu hidden">
 	<ul>
 		{{#is "home"}}
-			<li><a href="#sobre">Sobre</a></li>
-			<li><a href="#eventos">Eventos</a></li>
-			<li><a href="#fases">Fases do Circuito</a></li>
-			<li><a href="#cronograma">Cronograma</a></li>
-			<li><a href="#apoio">Apoio</a></li>
+		<li><a href="#sobre" data-i18n="menu_sobre">Sobre</a></li>
+		<li><a href="#eventos" data-i18n="menu_eventos">Eventos</a></li>
+		<li><a href="#fases" data-i18n="menu_fases">Fases do Circuito</a></li>
+		<li><a href="#cronograma" data-i18n="menu_cronograma">Cronograma</a></li>
+		<li><a href="#apoio" data-i18n="menu_apoio">Apoio</a></li>
 		{{else}}
-			<li><a href="/">Início</a></li>
+		<li><a href="/" data-i18n="menu_inicio">Início</a></li>
 		{{/is}}
 	</ul>
 </nav>
 
-
-
-
-<!-- Terceira Section -->
-
+<!-- Scripts -->
 <script src="{{asset 'js/header.js'}}"></script>
-<script src="{{asset "built/ghost-search.min.js"}}"></script>
+<script src="{{asset 'built/ghost-search.min.js'}}"></script>
+<script src="{{asset 'js/translate.js'}}"></script>

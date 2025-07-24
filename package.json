@@ -30,14 +30,6 @@
                 "default": true,
                 "label": "Mostrar sessão equipes por fase"
             },
-            "teams_title": {
-                "type": "text",
-                "label": "Título da seção de equipes"
-            },
-            "teams_subtitle": {
-                "type": "text",
-                "label": "Título da seção de equipes"
-            },
             "teams1_title": {
                 "type": "text",
                 "label": "Título da seção de equipes"
