@@ -928,19 +928,20 @@ footer {
 }
 
 /* Logos responsivas */
-.logos img {
-	width: 220px;
-	height: auto;
-	object-fit: contain;
-	display: block;
+
+.logos-1 {
+	width: 260px;
+
+
+}
+
+.logos-2 {
+	width: 240px;
+    padding-left: 3px;
+
 }
 
 
-/* Faz a terceira logo ocupar toda a linha abaixo */
-.logos img:first-child {
-	grid-column: span 2;
-	justify-self: center;
-}
 
 /* Links Relacionados e Contatos */
 ul {
