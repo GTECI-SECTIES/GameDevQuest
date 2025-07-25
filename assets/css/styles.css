@@ -94,7 +94,7 @@ a {
 .accessibility-options button {
 	font-size: 16px;
 	padding: 8px 12px;
-	background-color: #0e0e12;
+	background-color: transparent;
 	color: white;
 	border: none;
 	cursor: pointer;
@@ -1006,7 +1006,7 @@ a:hover {
 
 	.logo-mobile {
 		display: block;
-		width: 200px;
+		width: 180px;
 		height: auto;
 		margin-top: 0px;
 		padding-left: 10px;
@@ -1032,7 +1032,25 @@ a:hover {
 
 
 
+	 .accessibility-options button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
 
+  .language-button {
+    font-size: 0.9rem;
+    padding: 6px 0px;
+  }
+
+  .menu-toggle {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .acessibility-portal {
+    font-size: 0.9rem;
+    gap: 6px;
+  }
 
 	/*-------------HERO SECTION---------------------*/
 
@@ -1182,6 +1200,30 @@ a:hover {
 		pointer-events: none;
 
 	}
+
+	.timeline-title-wrapper {
+    flex-direction: row; /* 🔥 mantém lado a lado mesmo no mobile */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .circuito-svg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .timeline-title-text {
+    font-size: 2.3rem;
+  }
+  
+  .timeline-circuito svg{
+
+	width: 86px;
+  }
+
 
 	/*------footer section -------- */
 
