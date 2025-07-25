@@ -110,20 +110,20 @@ a {
 }
 
 .language-button {
-    background-color: transparent;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 4px;
+	background-color: transparent;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 4px;
 }
 
 .language-button:hover {
 
-    color: #d49bff;
+	color: #d49bff;
 
 
 }
@@ -287,16 +287,16 @@ a {
 }
 
 .top-logo {
-   	display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: -130px;
-    height: auto;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 600px;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: -130px;
+	height: auto;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 600px;
 }
 
 
@@ -423,7 +423,7 @@ a {
 
 .via-card-borda-container {
 	background-color: #fff;
-	width:  calc(33.333% - 1rem);
+	width: calc(33.333% - 1rem);
 	height: 230px;
 	border-radius: 15px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -498,16 +498,57 @@ a {
 
 /* TÍTULO DENTRO DO QUADRO */
 .timeline-title {
-	display: grid;
-	place-items: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.timeline-title img {
-	max-width: 400px;
-	width: 100%;
-	display: block;
-	margin: 0 auto;
+.timeline-title-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
+
+.timeline-circuito {
+	width: 120px;
+	height: 120px;
+	flex-shrink: 0;
+}
+
+.circuito-svg {
+	width: 100%;
+	height: 100%;
+	margin-top: -30px;
+	margin-left: 50px;
+}
+
+.bulletgame-icon {
+	position: absolute;
+	top: 60px;
+	right: 640px;
+	transform: translate(-50%, -50%);
+	width: 66px;
+	height: 66px;
+	z-index: 2;
+	pointer-events: none;
+
+}
+
+.timeline-title-text {
+	font-family: "ff-brokenscript-bc-web", serif;
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: #7e54ff;
+	text-align: center;
+	line-height: 1.1;
+	user-select: none;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	gap: 0.1em;
+}
+
 
 /* GRID DOS AVATARES */
 .timeline-steps {
@@ -763,12 +804,12 @@ a {
 
 /* ----------------------partners section --------------------*/
 .support-section-vertical {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  padding: 2rem 1rem;
-  flex-wrap: wrap;
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	padding: 2rem 1rem;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 .support-column {
@@ -781,59 +822,59 @@ a {
 }
 
 .support-column h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: #000;
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+	color: #000;
 }
 
 .logo-box {
-  padding: 10px;
-  border-radius: 35px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  transition: transform 0.3s ease;
+	padding: 10px;
+	border-radius: 35px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	transition: transform 0.3s ease;
 }
 
 .logo-box:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 /* Destaque para a primeira logo de cada coluna */
 .logo-box.destaque {
-  width: 120px;
-  height: 120px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+	width: 120px;
+	height: 120px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Imagem normal */
 .support-img,
 .partner-img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
+	width: 80%;
+	height: 80%;
+	object-fit: contain;
 }
 
 /* Imagem dentro do destaque – ligeiramente maior */
 .logo-box.destaque .support-img,
 .logo-box.destaque .partner-img {
-  width: 90%;
-  height: 90%;
+	width: 90%;
+	height: 90%;
 }
 
 .bg-white {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .bg-gray {
-  background-color: #efefef;
+	background-color: #efefef;
 }
 
 .bg-black {
-  background-color: #000000;
+	background-color: #000000;
 }
 
 
@@ -974,8 +1015,8 @@ a:hover {
 		justify-content: space-between;
 	}
 
-    .top-logo {
-         display: flex;
+	.top-logo {
+		display: flex;
 		justify-content: center;
 		margin-top: 40px;
 		margin-bottom: -80px;
@@ -985,7 +1026,7 @@ a:hover {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		max-width: 270px;
-    }
+	}
 
 
 
@@ -1067,38 +1108,41 @@ a:hover {
 
 	/*--------------------- TEAMS SECTION ----------*/
 
-   .teams-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    display: flex;
-  }
+	.teams-row {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		display: flex;
+	}
 
-  .teams-card-container {
-    width: 80%;
-    height: 300px; /* altura menor que no desktop, mas ainda fixa */
-  }
+	.teams-card-container {
+		width: 80%;
+		height: 300px;
+		/* altura menor que no desktop, mas ainda fixa */
+	}
 
-  .teams-card-bg {
-    height: 100%;
-    filter: brightness(50%);
-  }
+	.teams-card-bg {
+		height: 100%;
+		filter: brightness(50%);
+	}
 
-  .teams-card-text {
-    position: absolute; /* MANTÉM o texto sobre a imagem */
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    text-align: left;
-    padding: 0;
-    background: none; /* sem fundo extra */
-  }
+	.teams-card-text {
+		position: absolute;
+		/* MANTÉM o texto sobre a imagem */
+		bottom: 20px;
+		left: 20px;
+		color: white;
+		text-align: left;
+		padding: 0;
+		background: none;
+		/* sem fundo extra */
+	}
 
-  .teams-title,
-  .teams-subtitle {
-    text-align: center;
-    padding: 0 1rem;
-  }
+	.teams-title,
+	.teams-subtitle {
+		text-align: center;
+		padding: 0 1rem;
+	}
 
 
 
@@ -1124,6 +1168,18 @@ a:hover {
 
 	.timeline-step {
 		width: 100%;
+	}
+
+	.bulletgame-icon {
+		position: absolute;
+		top: 60px;
+		right: 375px;
+		transform: translate(-50%, -50%);
+		width: 66px;
+		height: 66px;
+		z-index: 2;
+		pointer-events: none;
+
 	}
 
 	/*------footer section -------- */
