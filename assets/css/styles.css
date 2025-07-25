@@ -59,7 +59,7 @@ a {
 }
 
 .logo-container {
-	grid-column: 1 / 12;
+	grid-column: 1 / 10;
 	max-height: 65px;
 }
 
