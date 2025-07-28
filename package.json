@@ -1,0 +1,92 @@
+{
+    "name": "tema-gdq",
+    "description": "Tema criado para o Game Dev Quest",
+    "version": "0.1.0",
+    "author": {
+        "name": "Joyce Vicente",
+        "email": "gteci@secties.pb.gov.br"
+    },
+    "config": {
+        "posts_per_page": 5,
+        "custom": {
+            "logo_fapesq": {
+                "type": "image",
+                "label": "Logo Fapesq"
+            },
+            "logo_secties": {
+                "type": "image",
+                "label": "Logo Secties"
+            },
+            "logo_govbranca": {
+                "type": "image",
+                "label": "Logo GovBranca"
+            },
+            "logo_pbsf": {
+                "type": "image",
+                "label": "Logo GovBranca"
+            },
+            "teamssection_button": {
+                "type": "boolean",
+                "default": true,
+                "label": "Mostrar sessão equipes por fase"
+            },
+            "teams1_title": {
+                "type": "text",
+                "label": "Título da seção de equipes"
+            },
+            "teams1_description": {
+                "type": "text",
+                "label": "Descrição da seção de equipes"
+            },
+            "teams2_title": {
+                "type": "text",
+                "label": "Título da seção de equipes"
+            },
+            "teams2_description": {
+                "type": "text",
+                "label": "Descrição da seção de equipes"
+            },
+            "teams3_title": {
+                "type": "text",
+                "label": "Título da seção de equipes"
+            },
+            "teams3_description": {
+                "type": "text",
+                "label": "Descrição da seção de equipes"
+            },
+
+             "logo_patrocinio_1": {
+                "type": "image",
+                "label": "Logo Patrocínio 1"
+            },
+            "logo_patrocinio_2": {
+                "type": "image",
+                "label": "Logo Patrocínio 2"
+            },
+            "logo_apoio_1": {
+                "type": "image",
+                "label": "Logo Apoio 1"
+            },
+            "logo_apoio_2": {
+                "type": "image",
+                "label": "Logo Apoio 2"
+            },
+            "logo_apoio_3": {
+                "type": "image",
+                "label": "Logo Apoio 3"
+            },
+            "logo_parceiro_1": {
+                "type": "image",
+                "label": "Logo Parceiro 1"
+            },
+            "logo_parceiro_2": {
+                "type": "image",
+                "label": "Logo Parceiro 2"
+            },
+            "logo_parceiro_3": {
+                "type": "image",
+                "label": "Logo Parceiro 3"
+            }
+        }
+    }
+}
