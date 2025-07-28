@@ -25,37 +25,17 @@
                 "type": "image",
                 "label": "Logo GovBranca"
             },
+            "idioma_button_url": {
+                "type": "text",
+                "default": " Link do site em PT/EN",
+                "label": "Link do Botão"
+            },
             "teamssection_button": {
                 "type": "boolean",
                 "default": true,
                 "label": "Mostrar sessão equipes por fase"
             },
-            "teams1_title": {
-                "type": "text",
-                "label": "Título da seção de equipes"
-            },
-            "teams1_description": {
-                "type": "text",
-                "label": "Descrição da seção de equipes"
-            },
-            "teams2_title": {
-                "type": "text",
-                "label": "Título da seção de equipes"
-            },
-            "teams2_description": {
-                "type": "text",
-                "label": "Descrição da seção de equipes"
-            },
-            "teams3_title": {
-                "type": "text",
-                "label": "Título da seção de equipes"
-            },
-            "teams3_description": {
-                "type": "text",
-                "label": "Descrição da seção de equipes"
-            },
-
-             "logo_patrocinio_1": {
+            "logo_patrocinio_1": {
                 "type": "image",
                 "label": "Logo Patrocínio 1"
             },

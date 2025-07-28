@@ -1,9 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const path = window.location.pathname.toLowerCase();
-    const title = document.title.toLowerCase();
+    function normalizeText(text) {
+        return text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    }
+
+    const path = normalizeText(window.location.pathname);
+    const title = normalizeText(document.title);
 
     const isParceirosPage =
-        path.includes("/fase") || title.includes("fase");
+        path.includes("fase") ||
+        path.includes("circulo") ||
+        path.includes("fabrica") ||
+        path.includes("coliseu") ||
+        title.includes("fase") ||
+        title.includes("circulo") ||
+        title.includes("fabrica") ||
+        title.includes("coliseu");
 
     if (isParceirosPage) {
         const style = document.createElement("style");
