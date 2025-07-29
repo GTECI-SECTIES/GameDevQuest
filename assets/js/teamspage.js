@@ -8,13 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isParceirosPage =
         path.includes("fase") ||
-        path.includes("circulo") ||
-        path.includes("fabrica") ||
-        path.includes("coliseu") ||
-        title.includes("fase") ||
-        title.includes("circulo") ||
-        title.includes("fabrica") ||
-        title.includes("coliseu");
+        title.includes("fase");
 
     if (isParceirosPage) {
         const style = document.createElement("style");
